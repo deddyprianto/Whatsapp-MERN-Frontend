@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  display: flex;
+  align-items: center;
+  margin: 40px;
+}
+.header img {
+  width: 200px;
+}
+.header h2 {
+  font-size: xx-large;
+  text-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+  color: limegreen;
+}
+.text__error {
+  color: red;
+  text-align: center;
+  font-size: medium;
+}
+.konten {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.konten h3 {
+  font-size: medium;
+  color: gray;
+}

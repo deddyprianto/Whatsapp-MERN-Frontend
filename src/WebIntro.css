@@ -1,0 +1,19 @@
+.app__webIntro {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -10px 10px 20px -6px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  padding: 30px;
+}
+.app__webIntro img {
+  width: 300px;
+  height: 300px;
+}
+.app__webIntro h1 {
+  font-size: xx-large;
+  color: limegreen;
+}
