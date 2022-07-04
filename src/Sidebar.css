@@ -57,3 +57,8 @@
   background-color: white;
   overflow: scroll;
 }
+.styleDeddy {
+  flex: 1;
+  background-color: white;
+  overflow: scroll;
+}
