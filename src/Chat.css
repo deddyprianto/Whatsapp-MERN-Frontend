@@ -3,6 +3,7 @@
   flex: 0.8;
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 .chat__header {
   padding: 20px;

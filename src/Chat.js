@@ -10,6 +10,7 @@ import {
 } from "@material-ui/icons";
 import axios from "./axios";
 import { useStateValueContext } from "./StateProvider";
+
 function Chat({ message }) {
   const [{ user }, dispatch] = useStateValueContext();
   const [input, setInput] = useState("");
@@ -24,6 +25,7 @@ function Chat({ message }) {
     });
     setInput("");
   };
+
   return (
     <div className="chat">
       <div className="chat__header">

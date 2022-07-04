@@ -27,6 +27,7 @@ function App() {
     channel.bind("inserted", (data) => {
       setPesan([...pesan, data]);
     });
+    // clean-up
     return () => {
       channel.unbind();
       channel.unsubscribe();

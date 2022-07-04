@@ -9,6 +9,7 @@ import axios from "../axios";
 import { useStateValueContext } from "../StateProvider";
 import "./Login.css";
 import { actionTypes } from "../reducer";
+
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
@@ -20,11 +21,12 @@ const useStyles = makeStyles({
   },
   titik: {
     minWidth: 700,
-    boxShadow: "-10px 10px 20px -6px rgba(255, 255, 255, 0.75)",
+    boxShadow: "-10px 10px 20px -6px rgba(0, 0, 0, 0.75)",
   },
   jarakField: {
     marginBottom: 20,
     marginTop: 20,
+    color: "white",
   },
   bullet: {
     display: "inline-block",
@@ -68,11 +70,15 @@ function Login(props) {
         <img src="./img/logo192.png" alt="logo your commpanies" />
         <h2>RealMe App Chat</h2>
       </div>
-      <Card className={classes.titik}>
+      <Card
+        className={classes.titik}
+        style={{ backgroundColor: "transparent" }}
+      >
         <CardContent>
           <form className={classes.root} noValidate autoComplete="off">
             <h1 className="text__error">{kesalahan}</h1>
             <TextField
+              color="secondary"
               type="text"
               className={classes.jarakField}
               id="outlined-basic"
@@ -81,6 +87,7 @@ function Login(props) {
               onChange={(val) => setName(val.target.value)}
             />
             <TextField
+              color="secondary"
               id="outlined-basic"
               label="Password"
               variant="outlined"
